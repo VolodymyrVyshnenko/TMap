@@ -51,6 +51,8 @@ namespace TMap
             map.Zoom = 10;  // Current Zoom Level
 
             map.SetPositionByKeywords("Kyiv, Ukraine");
+
+            this.MinimumSize = new Size(800, 600);
         }
 
         GMapOverlay markers = new GMapOverlay("markers");

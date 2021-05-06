@@ -44,6 +44,7 @@ namespace TMap
             this.btnRemoveOverlay = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.chkMouseClick = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // splitter1
@@ -97,7 +98,7 @@ namespace TMap
             // txtLat
             // 
             this.txtLat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLat.Location = new System.Drawing.Point(865, 31);
+            this.txtLat.Location = new System.Drawing.Point(847, 31);
             this.txtLat.Name = "txtLat";
             this.txtLat.Size = new System.Drawing.Size(105, 22);
             this.txtLat.TabIndex = 3;
@@ -105,7 +106,7 @@ namespace TMap
             // txtLng
             // 
             this.txtLng.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLng.Location = new System.Drawing.Point(865, 79);
+            this.txtLng.Location = new System.Drawing.Point(847, 79);
             this.txtLng.Name = "txtLng";
             this.txtLng.Size = new System.Drawing.Size(105, 22);
             this.txtLng.TabIndex = 5;
@@ -134,22 +135,22 @@ namespace TMap
             // btnAddPoint
             // 
             this.btnAddPoint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddPoint.Location = new System.Drawing.Point(995, 25);
+            this.btnAddPoint.Location = new System.Drawing.Point(958, 27);
             this.btnAddPoint.Name = "btnAddPoint";
-            this.btnAddPoint.Size = new System.Drawing.Size(104, 30);
+            this.btnAddPoint.Size = new System.Drawing.Size(141, 30);
             this.btnAddPoint.TabIndex = 7;
-            this.btnAddPoint.Text = "Додоти мітку";
+            this.btnAddPoint.Text = "Додати мітку";
             this.btnAddPoint.UseVisualStyleBackColor = true;
             this.btnAddPoint.Click += new System.EventHandler(this.btnAddPoint_Click);
             // 
             // btnClearList
             // 
             this.btnClearList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearList.Location = new System.Drawing.Point(995, 75);
+            this.btnClearList.Location = new System.Drawing.Point(958, 75);
             this.btnClearList.Name = "btnClearList";
-            this.btnClearList.Size = new System.Drawing.Size(104, 30);
+            this.btnClearList.Size = new System.Drawing.Size(141, 30);
             this.btnClearList.TabIndex = 8;
-            this.btnClearList.Text = "Очистити";
+            this.btnClearList.Text = "Новий Маршрут";
             this.btnClearList.UseVisualStyleBackColor = true;
             this.btnClearList.Click += new System.EventHandler(this.btnClearList_Click);
             // 
@@ -192,7 +193,7 @@ namespace TMap
             this.btnRemoveOverlay.Name = "btnRemoveOverlay";
             this.btnRemoveOverlay.Size = new System.Drawing.Size(154, 30);
             this.btnRemoveOverlay.TabIndex = 12;
-            this.btnRemoveOverlay.Text = "Видалити мітки";
+            this.btnRemoveOverlay.Text = "Очистити карту";
             this.btnRemoveOverlay.UseVisualStyleBackColor = true;
             this.btnRemoveOverlay.Click += new System.EventHandler(this.btnRemoveOverlay_Click);
             // 
@@ -218,11 +219,22 @@ namespace TMap
             this.chkMouseClick.Text = "Увімкнути п.к.м.";
             this.chkMouseClick.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(814, 438);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 17);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Вікно для вводу-виводу адреси";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1111, 665);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.chkMouseClick);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.btnRemoveOverlay);
@@ -263,6 +275,7 @@ namespace TMap
         private System.Windows.Forms.Button btnRemoveOverlay;
         private System.Windows.Forms.RichTextBox txtAddress;
         private System.Windows.Forms.CheckBox chkMouseClick;
+        private System.Windows.Forms.Label label3;
     }
 }
 
